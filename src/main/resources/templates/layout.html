@@ -2,6 +2,7 @@
 <html lang="en"
       xmlns:th="http://www.thymeleaf.org"
       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
 
 >
     <head>
@@ -27,7 +28,7 @@
                             <a class="nav-link active" aria-current="page" th:href="@{/}">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" th:href="@{/index}">Product</a>
+                            <a class="nav-link" th:href="@{/user/index}">Product</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -47,7 +48,7 @@
                     <ul class="navbar-nav">
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <span   >test</span>
+                                <span  sec:authentication="name" ></span>
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
                                 <li ><a class="dropdown-item" th:href="@{/logout}">Logout</a> </li>

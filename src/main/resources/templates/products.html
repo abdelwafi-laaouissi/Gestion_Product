@@ -2,6 +2,7 @@
 <html lang="en"
       xmlns:th="http://www.thymeleaf.org"
       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
       layout:decorate="layout.html"
 >
     <head>
@@ -10,8 +11,8 @@
     </head>
     <body>
         <div class="p-3" layout:fragment="content">
-            <div class="p-3"  >
-                <a class="btn btn-primary" th:href="@{/newProduct}">Add product</a>
+            <div class="p-3" sec:authorize="hasRole('ADMIN')" >
+                <a class="btn btn-primary" th:href="@{/admin/newProduct}">Add product</a>
             </div>
             <table class="table">
                 <thead>
@@ -26,9 +27,9 @@
                         <td th:text="${p.name}"></td>
                         <td th:text="${p.price}"></td>
                         <td th:text="${p.quantity}"></td>
-                        <td class="d-flex gap-2">
-                            <a class="btn btn-warning" th:href="@{/editProduct(id=${p.id})}">Modifier</a>
-                            <form method="post" th:action="@{/delete(id=${p.id})}">
+                        <td class="d-flex gap-2" sec:authorize="hasRole('ADMIN')">
+                            <a class="btn btn-warning" th:href="@{/admin/editProduct(id=${p.id})}">Modifier</a>
+                            <form method="post" th:action="@{/admin/delete(id=${p.id})}">
                                 <button type="submit" class="btn btn-danger">Delete</button>
                             </form>
                         </td>

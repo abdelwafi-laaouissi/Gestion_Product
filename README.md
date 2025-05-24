@@ -38,8 +38,14 @@ Il permet à un administrateur de gérer des produits (ajouter, modifier, suppri
   <img src="images/validation_product.png" alt="">
 - Update Product
   <img src="images/UpdateProduct.png" alt="">
- 
+ ###   -------------- Sécuriser l'application avec Spring Security --------------
 
+- page Note Authorization
+  <img src="images/page_NoteAuthorization.png">
+- Authorization User
+  <img src="images/AuthorizationUser.png">
+- Authorization admin
+  <img src="images/AuthorizationAdmin.png">
 
 
 
