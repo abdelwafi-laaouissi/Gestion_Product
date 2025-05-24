@@ -28,6 +28,18 @@ Il permet à un administrateur de gérer des produits (ajouter, modifier, suppri
 - DATA BASE
   <img src="images/data_H2.png" alt="H2_base">
 
+###  -------------- Vues thymeleaf --------------
+
+- List Products
+  <img src="images/list_products.png">
+- New product
+  <img src="images/newProduct.png" alt="">
+- Validation Save Product
+  <img src="images/validation_product.png" alt="">
+- Update Product
+  <img src="images/UpdateProduct.png" alt="">
+ 
+
 
 
 
