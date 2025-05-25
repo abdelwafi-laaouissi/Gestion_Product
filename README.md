@@ -43,7 +43,7 @@ Il permet à un administrateur de gérer des produits (ajouter, modifier, suppri
 - page Note Authorization
   <img src="images/page_NoteAuthorization.png">
 - Authorization User
-  <img src="images/AuthorizationUser.png">
+  ![authorizationUser.png](images/authorizationUser.png)
 - Authorization admin
   <img src="images/AuthorizationAdmin.png">
 - Rechercher Des Produits
