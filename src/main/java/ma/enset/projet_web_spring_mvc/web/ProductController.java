@@ -24,9 +24,11 @@ public class ProductController {
         return "redirect:/user/index";
     }
     @GetMapping("/user/index")
-    public String index(Model model) {
-        List<Product> products = productRepository.findAll();
+    public String index(Model model,@RequestParam(name = "keyword",defaultValue ="") String keyword) {
+        //List<Product> products = productRepository.findAll();
+        List<Product> products = productRepository.findByNameContainsIgnoreCase(keyword);
         model.addAttribute("productList", products);
+        model.addAttribute("keyword", keyword);
         return "products";
     }
     @GetMapping("/admin/newProduct")

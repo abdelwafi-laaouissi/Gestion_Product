@@ -14,6 +14,12 @@
             <div class="p-3" sec:authorize="hasRole('ADMIN')" >
                 <a class="btn btn-primary" th:href="@{/admin/newProduct}">Add product</a>
             </div>
+            <form method="get" th:action="@{/user/index}" class="mb-3">
+                <div class="input-group">
+                    <input type="text" class="form-control" name="keyword" th:value="${keyword}" placeholder="Rechercher un produit..." />
+                    <button class="btn btn-outline-primary" type="submit">Rechercher</button>
+                </div>
+            </form>
             <table class="table">
                 <thead>
                 <th>ID</th>

@@ -46,6 +46,9 @@ Il permet à un administrateur de gérer des produits (ajouter, modifier, suppri
   <img src="images/AuthorizationUser.png">
 - Authorization admin
   <img src="images/AuthorizationAdmin.png">
+- Rechercher Des Produits
+  <img src="images/recherche_product_1.png">
+- <img src="images/recherche_product_2.png">
 
 
 
